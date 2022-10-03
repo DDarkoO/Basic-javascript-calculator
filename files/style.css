@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Orbitron:wght@500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("../files/images/pcdesk.jpg");
+  /* background: linear-gradient(to right, #6190e8, #a7bfe8); */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#mainContainer {
+  box-sizing: border-box;
+  background-color: rgba(6, 5, 5, 0.95);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 0;
+  padding-top: 25px;
+  margin: auto;
+  margin-top: 150px;
+  max-width: 50vh;
+  min-height: 75vh;
+  grid-template-columns: repeat(4, 110px);
+  grid-template-rows: minmax(110px, auto) repeat(5, 100px);
+  border-radius: 5%;
+  box-shadow: 15px 15px 30px 10px rgb(59, 58, 58);
+}
+
+.buttons {
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-color: rgba(131, 198, 204, 0.918);
+  font-weight: 500;
+  font-size: 1.5em;
+  border-radius: 10%;
+  margin: 10px;
+  box-shadow: 0px 4px 0px 0px grey;
+}
+
+.buttons:hover {
+  background-color: rgb(199, 199, 199);
+  cursor: pointer;
+}
+
+.buttons:active {
+  box-shadow: 0px 2px 0px 0px rgb(75, 75, 75);
+  transform: translateY(2px);
+  background: rgba(157, 169, 170, 0.918);
+}
+
+#screen {
+  box-sizing: border-box;
+  grid-column: span 4;
+  background-color: rgba(230, 248, 230, 0.836);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px 2px grey;
+}
+
+.actual {
+  font-size: 3em;
+}
+
+.memo {
+  font-size: 1.5em;
+}
+
+.math {
+  background: rgba(250, 128, 165, 0.836);
+}
+
+.equals {
+  background: rgba(145, 224, 143, 0.836);
+}
+
+.clearScreen {
+  background: rgba(255, 185, 119, 0.836);
+}
+
+.delete {
+  background: rgba(255, 185, 119, 0.836);
+}
+
+.sqrRoot {
+  background: rgba(255, 185, 119, 0.836);
+}
